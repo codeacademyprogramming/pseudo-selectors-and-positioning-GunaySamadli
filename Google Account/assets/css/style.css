@@ -1,0 +1,200 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #dadcdf;
+    margin-top: 50px;
+    border-radius: 5px;
+    width: 500px;
+    height: auto;
+    min-height: 500px;
+}
+
+.container svg{
+    width: 120px;
+    height: 40px;
+}
+
+.container h1{
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 17px;
+}
+
+.container p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.input{
+    background-color: #fff;
+    height: 50px;
+    margin-left: 15%;
+    width: 370px;
+    border-radius: 4px;
+    color: #202124;
+    border: 1px solid #dadce0;
+    padding: 13px 15px;
+    transition: .25s;
+}
+
+.input:focus{
+    outline: none;
+    border: 2px solid #1a73e8;
+}
+.form-container{
+    width: 40vw;
+}
+
+.input-label{
+    position: absolute;
+    color: #80868b;
+    font-size: 16px;
+    left: 35%;
+    top: 40%;
+    padding: 0 28px;
+    transition: .25s;
+}
+
+.input-box.active .input-label,
+.input:focus + .input-label,
+.input:active + .input-label{
+    color: #1a73e8;
+    top: 37%;
+    background-color: #fff;
+    font-size: 11px;
+}
+
+
+#email{
+    text-decoration: none;
+    font-size: 19px;
+    color: #1a73e8;
+    margin-right: 48%;
+    margin-top: 10px;
+}
+
+#sign{
+    color: #5f6368;
+    font-size: 14px;
+    line-height: 1.4286;
+    margin-top: 57px;
+    margin-bottom: 0;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+#learn{
+    font-size: 19px;
+    text-decoration: none;
+    color: #1a73e8;
+    margin-bottom: 50px;
+    margin-right: 50%;
+}
+
+#account{
+    font-size: 19px;
+    text-decoration: none;
+    color: #1a73e8;
+    margin-right: 80px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#account:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#account:active{
+    background-color: rgb(222, 237, 243);
+}
+
+button{
+    margin-left: 60px;
+    background-color: #1676f3;
+    color: #fff;
+    font-size: 18px;
+    width: 85px;
+    border: 1px solid #1676f3 ;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #0e51a8;
+}
+
+
+.section{
+    display: flex;
+    justify-content: space-between;
+    color: #757575;
+    font-size: 14px;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+.section span{
+    padding: 6px 16px;
+}
+
+.section span{
+    position: relative;
+    display: inline-block;
+}
+
+span .language{
+    position: absolute;
+    display: none;
+    width: 150px;
+    height: 400px;
+    overflow: auto;
+    background: #fff;
+    box-shadow:0 0 5px 2px #888888;
+}
+.section span:hover .language,
+.section span:active .language{
+    position: absolute;
+    bottom: 50%;
+    display: block ;
+}
+
+
+.section ul li{
+    display: inline-block;
+    padding: 6px 16px;
+}
+.section a{
+    text-decoration: none;
+    color: #757575;
+}
+.section ul li:active,
+.section span:active{
+    background-color: lightgrey;
+}
+.section i{
+    font-size: 10px;
+}
+
+
+
